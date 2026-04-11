@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: jay-devops-app
+
+spec:
+
+  replicas: 2
+
+  selector:
+
+    matchLabels:
+
+      app: jay-devops-app
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: jay-devops-app
+
+    spec:
+
+      containers:
+
+      - name: jay-devops-app
+
+        image: urbinajay/jay-devops-app:latest
+
+        ports:
+
+        - containerPort: 3000
