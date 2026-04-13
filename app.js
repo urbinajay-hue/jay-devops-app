@@ -10,7 +10,7 @@ const PORT = 3000;
 
 app.get('/', (req, res) => {
 
-  res.send('Hello from Jay DevOps App!');
+  res.send('Hello from Jay DevOps App v2!');
 
 });
 
